@@ -1,0 +1,26 @@
+{
+  "name": "file_uploader",
+  "version": "1.0.0",
+  "description": "A simple project to upload files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaustavG1/file_uploader.git"
+  },
+  "author": "Kaustav Ghosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaustavG1/file_uploader/issues"
+  },
+  "homepage": "https://github.com/KaustavG1/file_uploader#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -4,13 +4,9 @@
   "description": "A simple project to upload files",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development node index.js",
     "prod": "NODE_ENV=production node index.js"
-=======
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 01adc819b82b7ae9cdf6c5679eac630de3461e22
   },
   "repository": {
     "type": "git",
@@ -23,11 +19,7 @@
   },
   "homepage": "https://github.com/KaustavG1/file_uploader#readme",
   "dependencies": {
-<<<<<<< HEAD
     "custom-env": "^2.0.1",
-    "dotenv": "^8.2.0",
-=======
->>>>>>> 01adc819b82b7ae9cdf6c5679eac630de3461e22
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1"
   },

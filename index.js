@@ -39,8 +39,6 @@ const fileDBSchema = new mongoose.Schema({
 // Create Schema Model
 const fileModel = mongoose.model('file_details', fileDBSchema);
 
-
-
 // Invoke file upload middleware
 app.use(fileUpload());
 
@@ -57,10 +55,9 @@ app.post('/', (request, response) => {
         const fileName = file.name;
         const fileSize = file.size;
         const uploadPath = path.resolve(__dirname, process.env.UPLOADS_FOLDER, fileName);
-        console.log('Fine Till Here ')
         file.mv(uploadPath, err => {
             if(err) {
-                response.send('<h1>404</h1>', err);
+                response.send("Unable to Upload requested file, please retry areter some time", err);
             } else {
                 const fileDetailsObj = new fileModel({
                     file_name: fileName,

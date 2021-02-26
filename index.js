@@ -57,9 +57,10 @@ app.post('/', (request, response) => {
         const fileName = file.name;
         const fileSize = file.size;
         const uploadPath = path.resolve(__dirname, process.env.UPLOADS_FOLDER, fileName);
+        console.log('Fine Till Here ')
         file.mv(uploadPath, err => {
             if(err) {
-                response.send(err);
+                response.send('<h1>404</h1>', err);
             } else {
                 const fileDetailsObj = new fileModel({
                     file_name: fileName,
